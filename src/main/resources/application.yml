@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-rabbitmq-example
+  rabbitmq:
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    virtual-host: /
+    username: ${RABBIT_USER}
+    password: ${RABBIT_PASSWORD}
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
