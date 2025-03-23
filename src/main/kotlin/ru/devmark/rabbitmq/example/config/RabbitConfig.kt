@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class MqConfig {
+class RabbitConfig {
 
     @Bean
     fun rabbitTemplate(connectionFactory: ConnectionFactory): RabbitTemplate {
@@ -23,13 +23,13 @@ class MqConfig {
     }
 
     @Bean
-    fun rabbitAdmin(connectionFactory: ConnectionFactory): RabbitAdmin {
-        return RabbitAdmin(connectionFactory)
+    fun jsonConverter(): MessageConverter {
+        return Jackson2JsonMessageConverter()
     }
 
     @Bean
-    fun jsonConverter(): MessageConverter {
-        return Jackson2JsonMessageConverter()
+    fun rabbitAdmin(connectionFactory: ConnectionFactory): RabbitAdmin {
+        return RabbitAdmin(connectionFactory)
     }
 
     @Bean
