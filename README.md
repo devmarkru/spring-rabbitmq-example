@@ -20,7 +20,7 @@
 - RABBIT_USER
 - RABBIT_PASSWORD
 
-В проекте уже есть `Dockerfile`, поэтому его можно легко развернуть в облачном хостинге. Например, на [dockhost.ru](https://dockhost.ru/?utm_source=devmark&utm_medium=cpa&utm_campaign=devmark).
+В проекте уже есть `Dockerfile`, поэтому его можно легко развернуть в облачном хостинге. Например, на [dockhost.ru](https://dockhost.ru/?utm_source=devmark&utm_medium=cpa&utm_campaign=devmark&p=z8i9gexg).
 
 ### Полезные ссылки
 * [Новости проекта](https://t.me/+RjrPWNUEwf8wZTMy) и короткие заметки.
