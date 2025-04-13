@@ -23,5 +23,6 @@
 В проекте уже есть `Dockerfile`, поэтому его можно легко развернуть в облачном хостинге. Например, на [dockhost.ru](https://dockhost.ru/?utm_source=devmark&utm_medium=cpa&utm_campaign=devmark&p=z8i9gexg).
 
 ### Полезные ссылки
+* [Event-driven сервис на RabbitMQ и Spring](https://devmark.ru/article/spring-rabbitmq)
 * [Новости проекта](https://t.me/+RjrPWNUEwf8wZTMy) и короткие заметки.
 * Ещё больше статей по разработке ПО вы можете найти на моём сайте [devmark.ru](https://devmark.ru/).
