@@ -1,6 +1,6 @@
 package ru.devmark.rabbitmq.example.listener
 
-import mu.KotlinLogging
+import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.stereotype.Component
 import ru.devmark.rabbitmq.example.config.Queues
