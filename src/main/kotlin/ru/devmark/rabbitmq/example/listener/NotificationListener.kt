@@ -1,11 +1,13 @@
 package ru.devmark.rabbitmq.example.listener
 
-import mu.KLogging
+import mu.KotlinLogging
 import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.stereotype.Component
 import ru.devmark.rabbitmq.example.config.Queues
 import ru.devmark.rabbitmq.example.event.RabbitEvent
 import ru.devmark.rabbitmq.example.repository.TaskRepository
+
+private val logger = KotlinLogging.logger {}
 
 @Component
 class NotificationListener(
@@ -24,6 +26,4 @@ class NotificationListener(
             logger.info { "Error while receiving task status change event: $e" }
         }
     }
-
-    private companion object : KLogging()
 }

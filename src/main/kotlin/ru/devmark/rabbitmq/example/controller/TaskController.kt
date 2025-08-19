@@ -1,6 +1,6 @@
 package ru.devmark.rabbitmq.example.controller
 
-import mu.KLogging
+import mu.KotlinLogging
 import org.springframework.amqp.core.Binding
 import org.springframework.amqp.rabbit.core.RabbitAdmin
 import org.springframework.amqp.rabbit.core.RabbitTemplate
@@ -24,6 +24,8 @@ import ru.devmark.rabbitmq.example.entity.TaskEntity
 import ru.devmark.rabbitmq.example.event.RabbitEvent
 import ru.devmark.rabbitmq.example.repository.SubtaskRepository
 import ru.devmark.rabbitmq.example.repository.TaskRepository
+
+private val logger = KotlinLogging.logger {}
 
 @RestController
 @RequestMapping("/tasks")
@@ -98,6 +100,4 @@ class TaskController(
         logger.info { "Task status notifications deactivated." }
         return EmptyResponse()
     }
-
-    private companion object : KLogging()
 }
