@@ -1,6 +1,6 @@
 package ru.devmark.rabbitmq.example.controller
 
-import mu.KotlinLogging
+import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.amqp.core.Binding
 import org.springframework.amqp.rabbit.core.RabbitAdmin
 import org.springframework.amqp.rabbit.core.RabbitTemplate
